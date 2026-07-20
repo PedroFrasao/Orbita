@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\pedro\Desktop\satelite_sim\build\CMakeFiles\5076b48132100c774982cc6376b7779e\update_mappings.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\pedro\Desktop\satelite_sim\build\_deps\glfw-src\src\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\pedro\Desktop\satelite_sim\build\_deps\glfw-src\src\mappings.h.in">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\pedro\Desktop\satelite_sim\build\_deps\glfw-src\CMake\GenerateMappings.cmake" />
+    <None Include="C:\Users\pedro\Desktop\satelite_sim\build\_deps\glfw-build\src\CMakeFiles\update_mappings" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{798D3582-EA61-3707-AA03-CFD835C31602}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{8085F878-3BF1-370C-BB44-50A7117949CF}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,10 @@
+^C:\USERS\PEDRO\DESKTOP\SATELITE_SIM\BUILD\_DEPS\GLM-SUBBUILD\CMAKEFILES\A2B9F6E9FFB8D1B9A1B6D10C703447F7\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/pedro/Desktop/satelite_sim/build/_deps/glm-subbuild -BC:/Users/pedro/Desktop/satelite_sim/build/_deps/glm-subbuild --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/pedro/Desktop/satelite_sim/build/_deps/glm-subbuild/glm-populate.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

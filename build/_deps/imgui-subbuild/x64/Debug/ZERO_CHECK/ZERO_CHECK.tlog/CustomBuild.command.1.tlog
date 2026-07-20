@@ -1,0 +1,10 @@
+^C:\USERS\PEDRO\DESKTOP\SATELITE_SIM\BUILD\_DEPS\IMGUI-SUBBUILD\CMAKEFILES\172A2A2C30DDCD632CB0366AD71A3809\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/pedro/Desktop/satelite_sim/build/_deps/imgui-subbuild -BC:/Users/pedro/Desktop/satelite_sim/build/_deps/imgui-subbuild --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/pedro/Desktop/satelite_sim/build/_deps/imgui-subbuild/imgui-populate.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

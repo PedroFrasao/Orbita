@@ -1,0 +1,16 @@
+C:/Users/pedro/Desktop/satelite_sim/build/CMakeFiles/glad.dir
+C:/Users/pedro/Desktop/satelite_sim/build/CMakeFiles/imgui.dir
+C:/Users/pedro/Desktop/satelite_sim/build/CMakeFiles/satellite_sim.dir
+C:/Users/pedro/Desktop/satelite_sim/build/CMakeFiles/INSTALL.dir
+C:/Users/pedro/Desktop/satelite_sim/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/pedro/Desktop/satelite_sim/build/CMakeFiles/ZERO_CHECK.dir
+C:/Users/pedro/Desktop/satelite_sim/build/_deps/glfw-build/CMakeFiles/uninstall.dir
+C:/Users/pedro/Desktop/satelite_sim/build/_deps/glfw-build/CMakeFiles/INSTALL.dir
+C:/Users/pedro/Desktop/satelite_sim/build/_deps/glfw-build/CMakeFiles/ALL_BUILD.dir
+C:/Users/pedro/Desktop/satelite_sim/build/_deps/glfw-build/src/CMakeFiles/glfw.dir
+C:/Users/pedro/Desktop/satelite_sim/build/_deps/glfw-build/src/CMakeFiles/update_mappings.dir
+C:/Users/pedro/Desktop/satelite_sim/build/_deps/glfw-build/src/CMakeFiles/INSTALL.dir
+C:/Users/pedro/Desktop/satelite_sim/build/_deps/glm-build/CMakeFiles/INSTALL.dir
+C:/Users/pedro/Desktop/satelite_sim/build/_deps/glm-build/CMakeFiles/ALL_BUILD.dir
+C:/Users/pedro/Desktop/satelite_sim/build/_deps/glm-build/glm/CMakeFiles/glm.dir
+C:/Users/pedro/Desktop/satelite_sim/build/_deps/glm-build/glm/CMakeFiles/INSTALL.dir

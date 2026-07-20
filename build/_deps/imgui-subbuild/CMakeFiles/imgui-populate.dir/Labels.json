@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/Users/pedro/Desktop/satelite_sim/build/_deps/imgui-subbuild/CMakeFiles/imgui-populate"
+		},
+		{
+			"file" : "C:/Users/pedro/Desktop/satelite_sim/build/_deps/imgui-subbuild/CMakeFiles/172a2a2c30ddcd632cb0366ad71a3809/imgui-populate.rule"
+		},
+		{
+			"file" : "C:/Users/pedro/Desktop/satelite_sim/build/_deps/imgui-subbuild/CMakeFiles/0afc7cdbc193f7bb01ecdf51270f3b62/imgui-populate-complete.rule"
+		},
+		{
+			"file" : "C:/Users/pedro/Desktop/satelite_sim/build/_deps/imgui-subbuild/CMakeFiles/c9aa39a5855ef2b6fb15f0931cc9a972/imgui-populate-build.rule"
+		},
+		{
+			"file" : "C:/Users/pedro/Desktop/satelite_sim/build/_deps/imgui-subbuild/CMakeFiles/c9aa39a5855ef2b6fb15f0931cc9a972/imgui-populate-configure.rule"
+		},
+		{
+			"file" : "C:/Users/pedro/Desktop/satelite_sim/build/_deps/imgui-subbuild/CMakeFiles/c9aa39a5855ef2b6fb15f0931cc9a972/imgui-populate-download.rule"
+		},
+		{
+			"file" : "C:/Users/pedro/Desktop/satelite_sim/build/_deps/imgui-subbuild/CMakeFiles/c9aa39a5855ef2b6fb15f0931cc9a972/imgui-populate-install.rule"
+		},
+		{
+			"file" : "C:/Users/pedro/Desktop/satelite_sim/build/_deps/imgui-subbuild/CMakeFiles/c9aa39a5855ef2b6fb15f0931cc9a972/imgui-populate-mkdir.rule"
+		},
+		{
+			"file" : "C:/Users/pedro/Desktop/satelite_sim/build/_deps/imgui-subbuild/CMakeFiles/c9aa39a5855ef2b6fb15f0931cc9a972/imgui-populate-patch.rule"
+		},
+		{
+			"file" : "C:/Users/pedro/Desktop/satelite_sim/build/_deps/imgui-subbuild/CMakeFiles/c9aa39a5855ef2b6fb15f0931cc9a972/imgui-populate-test.rule"
+		},
+		{
+			"file" : "C:/Users/pedro/Desktop/satelite_sim/build/_deps/imgui-subbuild/CMakeFiles/c9aa39a5855ef2b6fb15f0931cc9a972/imgui-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"imgui-populate"
+		],
+		"name" : "imgui-populate"
+	}
+}

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\pedro\Desktop\satelite_sim\build\_deps\imgui-subbuild\CMakeFiles\172a2a2c30ddcd632cb0366ad71a3809\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{1B0D8171-30EF-3D91-BDD7-48FEC9F58A5C}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

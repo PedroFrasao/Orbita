@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\pedro\Desktop\satelite_sim\build\_deps\glfw-subbuild\CMakeFiles\e92e43457e4db4b60b689d81625a74ea\glfw-populate-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\pedro\Desktop\satelite_sim\build\_deps\glfw-subbuild\CMakeFiles\e92e43457e4db4b60b689d81625a74ea\glfw-populate-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\pedro\Desktop\satelite_sim\build\_deps\glfw-subbuild\CMakeFiles\e92e43457e4db4b60b689d81625a74ea\glfw-populate-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\pedro\Desktop\satelite_sim\build\_deps\glfw-subbuild\CMakeFiles\e92e43457e4db4b60b689d81625a74ea\glfw-populate-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\pedro\Desktop\satelite_sim\build\_deps\glfw-subbuild\CMakeFiles\e92e43457e4db4b60b689d81625a74ea\glfw-populate-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\pedro\Desktop\satelite_sim\build\_deps\glfw-subbuild\CMakeFiles\e92e43457e4db4b60b689d81625a74ea\glfw-populate-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\pedro\Desktop\satelite_sim\build\_deps\glfw-subbuild\CMakeFiles\e92e43457e4db4b60b689d81625a74ea\glfw-populate-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\pedro\Desktop\satelite_sim\build\_deps\glfw-subbuild\CMakeFiles\e92e43457e4db4b60b689d81625a74ea\glfw-populate-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\pedro\Desktop\satelite_sim\build\_deps\glfw-subbuild\CMakeFiles\55dd78ac08a5235ea15d0266e43cb5a8\glfw-populate-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\pedro\Desktop\satelite_sim\build\_deps\glfw-subbuild\CMakeFiles\fe83823231abb1edfb5991f27337ca3e\glfw-populate.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\pedro\Desktop\satelite_sim\build\_deps\glfw-subbuild\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\pedro\Desktop\satelite_sim\build\_deps\glfw-subbuild\CMakeFiles\glfw-populate" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{AEDEED04-1C31-33D0-B378-3C7E16F97F0A}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/Users/pedro/Desktop/satelite_sim/build/_deps/glfw-subbuild/CMakeFiles/glfw-populate"
+		},
+		{
+			"file" : "C:/Users/pedro/Desktop/satelite_sim/build/_deps/glfw-subbuild/CMakeFiles/fe83823231abb1edfb5991f27337ca3e/glfw-populate.rule"
+		},
+		{
+			"file" : "C:/Users/pedro/Desktop/satelite_sim/build/_deps/glfw-subbuild/CMakeFiles/55dd78ac08a5235ea15d0266e43cb5a8/glfw-populate-complete.rule"
+		},
+		{
+			"file" : "C:/Users/pedro/Desktop/satelite_sim/build/_deps/glfw-subbuild/CMakeFiles/e92e43457e4db4b60b689d81625a74ea/glfw-populate-build.rule"
+		},
+		{
+			"file" : "C:/Users/pedro/Desktop/satelite_sim/build/_deps/glfw-subbuild/CMakeFiles/e92e43457e4db4b60b689d81625a74ea/glfw-populate-configure.rule"
+		},
+		{
+			"file" : "C:/Users/pedro/Desktop/satelite_sim/build/_deps/glfw-subbuild/CMakeFiles/e92e43457e4db4b60b689d81625a74ea/glfw-populate-download.rule"
+		},
+		{
+			"file" : "C:/Users/pedro/Desktop/satelite_sim/build/_deps/glfw-subbuild/CMakeFiles/e92e43457e4db4b60b689d81625a74ea/glfw-populate-install.rule"
+		},
+		{
+			"file" : "C:/Users/pedro/Desktop/satelite_sim/build/_deps/glfw-subbuild/CMakeFiles/e92e43457e4db4b60b689d81625a74ea/glfw-populate-mkdir.rule"
+		},
+		{
+			"file" : "C:/Users/pedro/Desktop/satelite_sim/build/_deps/glfw-subbuild/CMakeFiles/e92e43457e4db4b60b689d81625a74ea/glfw-populate-patch.rule"
+		},
+		{
+			"file" : "C:/Users/pedro/Desktop/satelite_sim/build/_deps/glfw-subbuild/CMakeFiles/e92e43457e4db4b60b689d81625a74ea/glfw-populate-test.rule"
+		},
+		{
+			"file" : "C:/Users/pedro/Desktop/satelite_sim/build/_deps/glfw-subbuild/CMakeFiles/e92e43457e4db4b60b689d81625a74ea/glfw-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"glfw-populate"
+		],
+		"name" : "glfw-populate"
+	}
+}
