@@ -20,7 +20,7 @@ Não tenho a pretensão de fazer um simulador profissional, mas sim um projeto q
 Uma prévia da interface atual do projeto.
 
 <p align="center">
-  <img src="assets/demo.gif" alt="Demonstração do Orbita" width="800">
+  <img src="/assets/demo.gif" alt="Demonstração do Orbita" width="800">
 </p>
 
 ## Referências
