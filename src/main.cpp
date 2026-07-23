@@ -13,6 +13,13 @@
 #include "Actuador.h"
 #include "PlotBuffer.h"
 
+#include <glm/glm.hpp>
+#include <glm/gtc/matrix_transform.hpp>
+#include <glm/gtc/type_ptr.hpp>
+
+#include "Shader.h"
+#include "Cube.h"
+
 int main() {
     const double fixedDt = 1.0 / 100.0; // 100 Hz -> 0.01s por passo de simulação
     double accumulator = 0.0;
@@ -42,6 +49,7 @@ int main() {
         std::cerr << "Falha ao inicializar GLAD\n";
         return -1;
     }
+    glEnable(GL_DEPTH_TEST);
 
     
     double previousTime = glfwGetTime();
@@ -95,8 +103,29 @@ int main() {
     float sensorBias = (float)sensor.bias;
     float actuatorMaxTorque = (float)actuator.maxTorque;
 
+    Shader shader("shaders/basic.vert", "shaders/basic.frag");
+    Cube satelliteCube;
+
+    
+
+    glm::mat4 view = glm::lookAt(
+        glm::vec3(2.0f, 2.0f, 3.0f), // posição da câmera no espaço 3D
+        glm::vec3(0.0f, 0.0f, 0.0f), // ponto para onde ela está olhando (origem, onde o cubo está)
+        glm::vec3(0.0f, 1.0f, 0.0f)  // vetor "para cima" (define o que é "topo" da câmera)
+    );
+
     while (!glfwWindowShouldClose(window)) {
         glfwPollEvents();
+        // Recalcula a projeção com o tamanho ATUAL da janela, evitando distorção ao redimensionar
+        int framebufferWidth, framebufferHeight;
+        glfwGetFramebufferSize(window, &framebufferWidth, &framebufferHeight);
+        glViewport(0, 0, framebufferWidth, framebufferHeight);
+
+        float aspectRatio = (framebufferHeight != 0)
+            ? (float)framebufferWidth / (float)framebufferHeight
+            : 1.0f;
+
+        glm::mat4 projection = glm::perspective(glm::radians(45.0f), aspectRatio, 0.1f, 100.0f);
 
         // Controle de tempo
         double currentTime = glfwGetTime();
@@ -138,8 +167,10 @@ int main() {
         ImGui_ImplGlfw_NewFrame();
         ImGui::NewFrame();
 
+        ImGui::SetNextWindowPos(ImVec2(10, 10), ImGuiCond_FirstUseEver);
         ImGui::SetNextWindowSize(ImVec2(350, 400), ImGuiCond_FirstUseEver);
         ImGui::Begin("Satellite Control Panel");
+        
 
         ImGui::Text("Ganhos do PID:");
         ImGui::SliderFloat("Kp", &pidKp, 0.0f, 10.0f);
@@ -208,7 +239,51 @@ int main() {
 
         // Renderiza a cena
         glClearColor(0.1f, 0.1f, 0.15f, 1.0f);
-        glClear(GL_COLOR_BUFFER_BIT);
+        glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+
+        // Transformação geral do satélite 
+        glm::mat4 satelliteTransform = glm::rotate(
+            glm::mat4(1.0f),
+            (float)satellite.angle,        // ângulo em radianos, vindo direto da simulação
+            glm::vec3(0.0f, 1.0f, 0.0f)    // eixo de rotação: Y (vertical)
+        );
+
+        shader.use();
+        shader.setMat4("view", glm::value_ptr(view));
+        shader.setMat4("projection", glm::value_ptr(projection));
+
+        // ---- Corpo do satélite ----
+        {
+            glm::mat4 local = glm::scale(glm::mat4(1.0f), glm::vec3(0.6f)); // cubo menor
+            glm::mat4 model = satelliteTransform * local;
+
+            shader.setMat4("model", glm::value_ptr(model));
+            shader.setVec3("objectColor", 0.75f, 0.75f, 0.75f); // cinza metálico
+            satelliteCube.draw();
+        }
+
+        // ---- Painel solar esquerdo ----
+        {
+            glm::mat4 local = glm::translate(glm::mat4(1.0f), glm::vec3(-1.0f, 0.0f, 0.0f));
+            local = glm::scale(local, glm::vec3(1.4f, 0.5f, 0.05f)); // fino e longo
+            glm::mat4 model = satelliteTransform * local;
+
+            shader.setMat4("model", glm::value_ptr(model));
+            shader.setVec3("objectColor", 0.1f, 0.2f, 0.6f); // azul escuro (painel solar)
+            satelliteCube.draw();
+        }
+
+        // ---- Painel solar direito ----
+        {
+            glm::mat4 local = glm::translate(glm::mat4(1.0f), glm::vec3(1.0f, 0.0f, 0.0f));
+            local = glm::scale(local, glm::vec3(1.4f, 0.5f, 0.05f));
+            glm::mat4 model = satelliteTransform * local;
+
+            shader.setMat4("model", glm::value_ptr(model));
+            shader.setVec3("objectColor", 0.1f, 0.2f, 0.6f);
+            satelliteCube.draw();
+        }
+        
 
         ImGui::Render();
         ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());

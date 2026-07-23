@@ -15,6 +15,14 @@ O projeto ainda está no começo e muita coisa vai mudar ao longo do desenvolvim
 
 Não tenho a pretensão de fazer um simulador profissional, mas sim um projeto que seja interessante do ponto de vista de engenharia e que me permita estudar os conceitos usados em sistemas reais.
 
+## Demonstração
+
+Uma prévia da interface atual do projeto.
+
+<p align="center">
+  <img src="assets/demo.gif" alt="Demonstração do Orbita" width="800">
+</p>
+
 ## Referências
 
 Esses são alguns dos materiais que estou usando como base durante o desenvolvimento:
